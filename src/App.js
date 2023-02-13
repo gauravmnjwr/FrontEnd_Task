@@ -38,25 +38,25 @@ export default function App() {
             const currSpeed = document.querySelector('.video2').playbackRate;
             console.log(currSpeed)
             if (currSpeed === 2.0) {
-                document.querySelector('.video1').playbackRate = 1;
+                document.querySelector('.video2').playbackRate = 1;
                 document.querySelector('#speed-div').innerHTML = '[1x]';
             }
             else {
 
-                document.querySelector('.video1').playbackRate = currSpeed + 0.5;
+                document.querySelector('.video2').playbackRate = currSpeed + 0.5;
                 document.querySelector('#speed-div').innerHTML = `[${currSpeed + 0.5}x]`;
             }
         }
         else if (vid === 3) {
-            const currSpeed = document.querySelector('.video1').playbackRate;
+            const currSpeed = document.querySelector('.video3').playbackRate;
             console.log(currSpeed)
             if (currSpeed === 2.0) {
-                document.querySelector('.video1').playbackRate = 1;
+                document.querySelector('.video3').playbackRate = 1;
                 document.querySelector('#speed-div').innerHTML = '[1x]';
             }
             else {
 
-                document.querySelector('.video1').playbackRate = currSpeed + 0.5;
+                document.querySelector('.video3').playbackRate = currSpeed + 0.5;
                 document.querySelector('#speed-div').innerHTML = `[${currSpeed + 0.5}x]`;
             }
         }
